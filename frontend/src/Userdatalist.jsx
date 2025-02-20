@@ -8,7 +8,7 @@ export const Userdatalist = ({data}) => {
   const{mutate : dlduserdata} = useMutation({
     mutationFn: async(id)=>{
       try {
-        const res = await fetch(`http://localhost:4501/api/user/dld/${id}`,{
+        const res = await fetch(`https://mernproject-u4q1.onrender.com/api/user/dld/${id}`,{
           method:"DELETE",
           credentials:"include",
           

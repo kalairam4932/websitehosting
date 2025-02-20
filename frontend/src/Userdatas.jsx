@@ -8,7 +8,7 @@ export const Userdatas = () => {
         queryKey:["userdatakey"],
         queryFn : async()=>{
             try {
-                const res = await fetch("http://localhost:4501/api/user",{
+                const res = await fetch("https://mernproject-u4q1.onrender.com/api/user",{
                     method:"GET",
                     credentials:"include",
                     headers:{

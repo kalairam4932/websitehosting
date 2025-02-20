@@ -47,7 +47,7 @@ export const Usercreate = () => {
         const{mutate:createuser,isError,error} = useMutation({
             mutationFn : async({rollnumber,email,age,fullname})=>{
                 try {
-                    const res = await fetch("http://localhost:4501/api/user/createuser",{
+                    const res = await fetch("https://mernproject-u4q1.onrender.com/api/user/createuser",{
                         method:"POST",
                         credentials:"include",
                         headers : {
